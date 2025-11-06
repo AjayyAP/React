@@ -1,13 +1,24 @@
 import './App.css'
 import React from 'react'
-import Welcome from './embedding-expresiion/Welcome'
-import CallingFunction from './embedding-expresiion/CallingFunction'
-import Conditinal from './embedding-expresiion/Conditinal'
-import NewBasic from './NewBasic'
-import Basic from './Functional-Components/Basic'
-import State from './Functional-Components/State'
-import Props from './Functional-Components/Props'
-import Counter from './Functional-Components/Hooks/Counter'
+// import Welcome from './embedding-expresiion/Welcome'
+// import CallingFunction from './embedding-expresiion/CallingFunction'
+// import Conditinal from './embedding-expresiion/Conditinal'
+// import NewBasic from './NewBasic'
+// import Basic from './Functional-Components/Basic'
+// import State from './Functional-Components/State'
+// import Props from './Functional-Components/Props'
+// import Counter from './Functional-Components/Hooks/Counter'
+// import ProfileForm from './Functional-Components/Hooks/UseState/ProfileForm'
+// import Textinput from './Functional-Components/Hooks/UseState/TextInput'
+// import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
+// import UseEff from './Functional-Components/Hooks/UserEffect/UseEff'
+import Home from './Functional-Components/Hooks/UserContext/ThemeSet/Home'
+import UserList from './Functional-Components/Hooks/UserEffect/UserList'
+import { ThemeProvider } from './Functional-Components/Hooks/UserContext/ThemeSet/ThemeContext'
+import Counter from './Functional-Components/Hooks/UseState/Counter'
+import ProfileForm from './Functional-Components/Hooks/UseState/ProfileForm'
+import Textinput from './Functional-Components/Hooks/UseState/TextInput'
+import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
 
 const App = () => {
   return (
@@ -22,7 +33,24 @@ const App = () => {
       {/* <Basic/> */}
       {/* <State/> */}
       {/* <Props/> */}
-      <Counter/>
+
+
+      {/* <-----hooks-----/> */}
+      {/* <Counter/>
+      <ProfileForm/>
+      <Textinput/>
+      <Togglebutton/> */}
+      {/* <UseEff/> */}
+      {/* <UserList/> */} 
+
+
+      {/* <---usecontext----/> */}
+      {/* <-----theme-----/> */}
+      <ThemeProvider>
+        <Home/>
+      </ThemeProvider>
+      
+      
 
 
 
