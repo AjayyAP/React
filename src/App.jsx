@@ -13,12 +13,14 @@ import React from 'react'
 // import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
 // import UseEff from './Functional-Components/Hooks/UserEffect/UseEff'
 import Home from './Functional-Components/Hooks/UserContext/ThemeSet/Home'
-import UserList from './Functional-Components/Hooks/UserEffect/UserList'
-import { ThemeProvider } from './Functional-Components/Hooks/UserContext/ThemeSet/ThemeContext'
-import Counter from './Functional-Components/Hooks/UseState/Counter'
-import ProfileForm from './Functional-Components/Hooks/UseState/ProfileForm'
-import Textinput from './Functional-Components/Hooks/UseState/TextInput'
-import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
+import UserList from './Functional-Components/Hooks/UserContext/User-List/UserList'
+import { UserApiProvider } from './Functional-Components/Hooks/UserContext/User-List/UserApiContext'
+// import UserList from './Functional-Components/Hooks/UserEffect/UserList'
+// import { ThemeProvider } from './Functional-Components/Hooks/UserContext/ThemeSet/ThemeContext'
+// import Counter from './Functional-Components/Hooks/UseState/Counter'
+// import ProfileForm from './Functional-Components/Hooks/UseState/ProfileForm'
+// import Textinput from './Functional-Components/Hooks/UseState/TextInput'
+// import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
 
 const App = () => {
   return (
@@ -41,16 +43,22 @@ const App = () => {
       <Textinput/>
       <Togglebutton/> */}
       {/* <UseEff/> */}
-      {/* <UserList/> */} 
+      {/* <UserList/> */}
 
 
       {/* <---usecontext----/> */}
       {/* <-----theme-----/> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <Home/>
-      </ThemeProvider>
-      
-      
+      </ThemeProvider> */}
+
+
+      {/* <2 ---user list--/> */}
+      <UserApiProvider>
+        <UserList/>
+      </UserApiProvider>
+
+
 
 
 
