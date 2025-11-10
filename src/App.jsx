@@ -12,9 +12,14 @@ import React from 'react'
 // import Textinput from './Functional-Components/Hooks/UseState/TextInput'
 // import Togglebutton from './Functional-Components/Hooks/UseState/Toggle'
 // import UseEff from './Functional-Components/Hooks/UserEffect/UseEff'
-import Home from './Functional-Components/Hooks/UserContext/ThemeSet/Home'
+// import Home from './Functional-Components/Hooks/UserContext/ThemeSet/Home'
 import UserList from './Functional-Components/Hooks/UserContext/User-List/UserList'
 import { UserApiProvider } from './Functional-Components/Hooks/UserContext/User-List/UserApiContext'
+import { Link, Route, Routes } from 'react-router-dom'
+import Home from './React-Router-Dom/Home'
+import About from './React-Router-Dom/About'
+import Product from './Dynamic -routing.jsx/Product '
+import ProductDetails from './Dynamic -routing.jsx/ProductDetails'
 // import UserList from './Functional-Components/Hooks/UserEffect/UserList'
 // import { ThemeProvider } from './Functional-Components/Hooks/UserContext/ThemeSet/ThemeContext'
 // import Counter from './Functional-Components/Hooks/UseState/Counter'
@@ -54,10 +59,29 @@ const App = () => {
 
 
       {/* <2 ---user list--/> */}
-      <UserApiProvider>
+      {/* <UserApiProvider>
         <UserList/>
-      </UserApiProvider>
+      </UserApiProvider> */}
 
+      {/* ----react-router-dom--- */}
+      {/* ---1.basic--- */}
+      {/* <div>
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+        </nav>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div> */}
+
+      {/* -----2.dynamic routing----- */}
+
+      <Routes>
+        <Route path='/' element={<Product />}/> 
+        <Route path='/products/:id' element={<ProductDetails />}/>
+      </Routes>
 
 
 
