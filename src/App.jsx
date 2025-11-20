@@ -7,6 +7,7 @@ import AllProducts from './react-keys/AllProducts'
 import Indexx from './task/Indexx'
 import Simple from './Form/Simple'
 import Form from './Form/Form'
+import Crud from './Local-storage/Crud '
 // import CallingFunction from './embedding-expresiion/CallingFunction'
 // import Conditinal from './embedding-expresiion/Conditinal'
 // import NewBasic from './NewBasic'
@@ -127,9 +128,11 @@ const App = () => {
 
      {/* ----form-- */}
      {/* <Simple/> */}
-     <Form/>
+     {/* <Form/> */}
+       
+ {/* localstorge */}
 
-
+ <Crud/>
 
      
 
