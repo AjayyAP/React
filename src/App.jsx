@@ -4,7 +4,8 @@ import React from 'react'
 // import TodoApp from './Todo/TodoApp'
 // import BasicHookForm from './Form/React-hook-form/BasicHookForm'
 // import AxiosPut from './Axios/AxiosPut'
-import AxiosDelete from './Axios/AxiosDelete'
+// import AxiosDelete from './Axios/AxiosDelete'
+import Counter from './Redux/Counter'
 // import Login from './Session storage/Login'
 // import Welcome from './embedding-expresiion/Welcome'
 // import Person from './embedding-expresiion/Person '
@@ -160,9 +161,10 @@ const App = () => {
 
       {/* <AxiosPut/> */}
 
-      <AxiosDelete/>
+      {/* <AxiosDelete/> */}
+      
 
-     
+     <Counter/>
 
 </>
 
